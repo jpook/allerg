@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	version="2.0">
+	<persistence-unit name="almut">
+		<jta-data-source>counterDS</jta-data-source>
+		<class>com.jpo.almut.model.Allergen</class>
+		<class>com.jpo.almut.model.Allergengroup</class>
+		<class>com.jpo.almut.model.Dilution</class>
+		<class>com.jpo.almut.model.Horse</class>
+		<class>com.jpo.almut.model.Person</class>
+		<class>com.jpo.almut.model.Post</class>
+		<class>com.jpo.almut.model.Rawdata</class>
+		<class>com.jpo.almut.model.Trial</class>
+		<class>com.jpo.almut.model.TrialAllergen</class>
+		<class>com.jpo.almut.model.TrialHorse</class>
+		<class>com.jpo.almut.model.Unit</class>
+		<class>com.jpo.almut.model.Userlist</class>
+		<class>com.jpo.almut.model.Vet</class>
+		<class>com.jpo.almut.model.AllergenValue</class>
+		<properties>
+			<property name="eclipselink.target-database" value="MySQL" />
+			<property name="eclipselink.ddl-generation" value="create-tables"/>
+		</properties>
+	</persistence-unit>
+</persistence>
